@@ -13,3 +13,11 @@ printf("%s", p); /* print the string p */
 ```
 
  
+
+
+
+
+
+
+###Ref
+* https://github.com/risc5/CLanguage/blob/main/c.md
