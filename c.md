@@ -137,7 +137,54 @@ https://www.geeksforgeeks.org/pointer-array-array-pointer/
 int *ptr[3];
 ~~~
 
+~~~shell
 
+
+Declaration of an array of pointers:
+
+ int *ptr[3];
+We can make separate pointer variables which can point to the different values or we can make one integer array of pointers that can point to all the values. Example: 
+
+
+// C++ program to demonstrate
+// example of array of pointers.
+ 
+#include <iostream>
+using namespace std;
+ 
+const int SIZE = 3;
+ 
+int main()
+{
+ 
+    // creating an array
+    int arr[] = { 1, 2, 3 };
+ 
+    // we can make an integer pointer array to
+    // storing the address of array elements
+    int i, *ptr[SIZE];
+ 
+    for (i = 0; i < SIZE; i++) {
+ 
+        // assigning the address of integer.
+        ptr[i] = &arr[i];
+    }
+ 
+    // printing values using pointer
+    for (i = 0; i < SIZE; i++) {
+ 
+        cout << "Value of arr[" << i << "] = " << *ptr[i] << endl;
+    }
+}
+ 
+// This code is contributed by sarajadhav12052009
+Output:
+Value of arr[0] = 1
+Value of arr[1] = 2
+Value of arr[2] = 3
+
+
+~~~
 
 ~~~shell
 #include <stdio.h>
