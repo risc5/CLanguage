@@ -231,4 +231,4 @@ void main()
 
 ### Debug Tool
 * Valgrind, Address Sanitizer, Coverity
-* 
+* https://www.elinux.org/images/6/60/GDB-Anderson-ELC.pdf
